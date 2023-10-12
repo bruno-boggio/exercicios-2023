@@ -1,0 +1,210 @@
+<div class="all-page">
+  <div class="header-div">
+
+  <div class="slaca-logo">
+    <p class="slaca-text">SLACA 2019</p>
+  </div>
+
+  <div class="header">
+
+    <div class="align-header-elements">
+
+      <div class="header-div-1">
+      <p class="header-text-p1">Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
+      <p class="header-text-p2">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</p>
+      <p class="header-text-p1">ISSN: 1234-5678</p>
+      </div>
+
+      <button class="language-option">
+        <img src="../assets/language image.png" class="globe" alt="globe-icon">
+        PT,BR
+        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6" fill="none">
+          <path d="M4 5L7 1H1L4 5Z" fill="#333333" stroke="#333333"/>
+        </svg>
+      </button>
+
+      <div class="welcome">
+        <span class="span-welcome-1">Bem vindo!</span>
+        <span class="span-welcome-2">alguem12@galoascience.com</span>
+      </div>
+
+      <img src="../assets/image.png" class="profile-picture" alt="profile-picture">
+    </div>
+
+  </div>
+  </div>
+
+
+ <div class="menu-body-div">
+
+  <div class="menu-div">
+    <img src="../assets/dewey 4.png" alt="slaca-img" class="slaca-img">
+
+    <div>
+      <ul class="slaca-menu">
+        <li class="slaca-menu-item" href><a href="#">Apresentação</a></li>
+    </ul>
+        <div class="bg-slaca-menu"></div>
+
+    <ul class="slaca-menu">
+        <li class="slaca-menu-item"><a href="#">Comitês</a></li>
+    </ul>
+        <div class="bg-slaca-menu"></div>
+    <ul class="slaca-menu">
+        <li class="slaca-menu-item"><a href="#">Autores</a></li>
+    </ul>
+        <div class="bg-slaca-menu"></div>
+
+    <ul class="slaca-menu">
+        <li class="slaca-menu-item"><a href="#">Eixos temáticos</a></li>
+    </ul>
+        <div class="bg-slaca-menu"></div>
+
+        <ul class="slaca-menu">
+        <li class="slaca-menu-item"><a href="#">Trabalhos</a></li>
+      </ul>
+        <div class="bg-slaca-menu"></div>
+
+        <ul class="slaca-menu">
+        <li class="slaca-menu-item"><a href="#">Contato</a></li>
+        </ul>
+        <div class="bg-slaca-menu"></div>
+    </div>
+  </div>
+
+
+
+    <div class="container">
+
+
+      <div class="title">
+
+        <div class="title-div">
+          <h2 class="title-h2">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </h2>
+
+          <img src="../assets/img-bg.jpg" alt="video" class="video">
+
+          <div class="summary">
+            <div class="summary-header">
+              <div class="summary-title">
+                <p>Resumo</p>
+              </div>
+            </div>
+
+            <div class="summary-text" [ngClass]="{ 'expanded': textoExpandido }">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant...
+                <button (click)="toggleTexto()" *ngIf="!textoExpandido" class="btn-show-more">ver mais</button>
+              </p>
+              <p *ngIf="textoExpandido">
+                Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant...
+                <button (click)="reverterTexto()" *ngIf="textoExpandido" class="btn-show-less">Ver menos</button>
+              </p>
+            </div>
+          </div>
+
+          <div class="discuss">
+              <div class="discuss-header">
+                  <div class="discuss-title">
+                    <p>Discussões</p>
+                  </div>
+
+             <div class="group-share-ideas">
+                <div class="share-ideas">
+                    <p class="share-ideas-p">Compartilhe suas ideias ou dúvidas com os autores!</p>
+
+                    <div class="icons-group">
+                        <img src="../assets/icone1.png" alt="icone 1">
+                        <img src="../assets/icone2.png" alt="icone 2">
+                        <img src="../assets/icone3.png" alt="icone 3">
+
+                    </div>
+
+                     <div class="share-ideas-text">
+                        <p class="share-ideas-text-p">
+                          Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
+                        </p>
+                    </div>
+
+
+
+                  <svg xmlns="http://www.w3.org/2000/svg" class="share-ideas-line"  fill="none">
+                    <path d="M0 1H1300" stroke="#E7E7E7"/>
+                  </svg>
+
+                  <div class="div-create-topic">
+
+                    <button class="btn-create-topic">
+                      <img src="../assets/icon - criar.png" alt="button to create topic" class="plus-icon">
+                        Criar tópico
+                    </button>
+
+                  </div>
+
+
+                 </div>
+              </div>
+
+              </div>
+          </div>
+
+        <footer>
+          <img src="../assets/footer.png" alt="footer" class="footer">
+      </footer>
+
+
+        </div>
+      </div>
+
+      <div class="group-btn">
+        <div class="space-btn">
+          <button class="btn-download-1">  <button class="arrow">  </button>Download</button>
+          <button class="btn-star"> <i class="bi bi-star-fill"></i></button>
+          <button class="btn-star"> <img src="../assets/doi.png" alt="doi-image" class="doi"></button>
+        </div>
+
+        <div>
+          <p class="text-above-details">COMO CITAR ESSE TRABALHO?</p>
+        </div>
+
+        <div class="detail-div">
+          <div class="detail">
+            <div class="align-detail">
+              <p class="detail-p">Detalhes</p>
+            </div>
+          </div>
+
+          <div class="info-detail">
+              <p class="info-detail-p">Tipo de Apresentação: <strong>Pôster Eixo</strong></p>
+              <p class="info-detail-p">Eixo temático: <strong>Alimentação e saúde (AS)</strong></p>
+              <p class="info-detail-p">Palavras-chaves: <strong>Alimentos funcionais, alimentação escolar.</strong></p>
+
+
+              <p class="info-detail-p2"><strong>Autores:</strong></p>
+              <p class="info-detail-p3">Galileo Galilei¹</p>
+              <p class="info-detail-p3">Berta Lange de Morretes²</p>
+              <p class="info-detail-p3">Isaac Newton³</p>
+              <p class="info-detail-p3">Cesar Lattes¹</p>
+              <p class="info-detail-p3">Stephen Hawking⁴</p>
+
+
+              <p class="info-detail-p4">¹Universidade Estadual de Campinas</p>
+              <p class="info-detail-p5">²Universidade de São Paulo</p>
+              <p class="info-detail-p5">³Instituto Nacional de Pesquisas</p>
+              <p class="info-detail-p5">Espaciais</p>
+              <p class="info-detail-p5">⁴Universidade Federal do Rio de</p>
+              <p class="info-detail-p5">Janeiro</p>
+          </div>
+        </div>
+
+
+
+
+      </div>
+
+    </div>
+
+ </div>
+
+
+</div>
