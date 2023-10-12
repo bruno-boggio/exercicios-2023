@@ -109,7 +109,47 @@
                     <p>Discussões</p>
                   </div>
 
-             <div class="group-share-ideas">
+
+                  <div *ngIf="mostrarDiv" class="show-div">
+                    <p class="show-div-p">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                    <form>
+                      <p class="subject">Assunto</p>
+                      <input type="text" placeholder="Defina um tópico sucinto para notificar os autores..." class="ops-topic-subject">
+                      <p class="subject">Conteúdo</p>
+                      <textarea class="comments-container"></textarea>
+                      <div class="content-div">
+                        <div class="content-div-space"></div>
+                        <button class="btn-send" (click)="showDivComments()">Enviar</button>
+                      </div>
+                    </form>
+                  </div>
+
+                <div class="topic-sent" *ngIf="showTopic">
+                    <p class="topic-sent-p1">Seu tópico foi enviado com sucesso! :D</p>
+                    <p class="topic-sent-p2">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                    <div class="div-topic-sent-p3"><a class="topic-sent-p3" href="#">Descubra outros trabalhos!</a></div>
+                </div>
+
+                <div *ngIf="divComments" class="show-div-empty" >
+
+
+                  <div class="new-topic">
+                      <hr class="horizontal-line">
+                      <button class="btn-create-topic-2">
+                          criar novo tópico
+                      </button>
+
+                      <div class="waiting-feedback">
+                          <img src="../assets/done.png" alt="done image" class="done-image">
+                          <p class="waiting-feedback-p"><strong>Aguardando feedback dos autores</strong></p>
+                          <div class="div-topic-sent-p3"><a class="edit-topic" href="#">Editar tópico</a></div>
+                      </div>
+
+
+                    </div>
+                </div>
+
+             <div class="group-share-ideas" *ngIf="showDiv">
                 <div class="share-ideas">
                     <p class="share-ideas-p">Compartilhe suas ideias ou dúvidas com os autores!</p>
 
@@ -134,12 +174,15 @@
 
                   <div class="div-create-topic">
 
-                    <button class="btn-create-topic">
+                    <button class="btn-create-topic" (click)="toggleForm()">
                       <img src="../assets/icon - criar.png" alt="button to create topic" class="plus-icon">
                         Criar tópico
                     </button>
 
                   </div>
+
+
+
 
 
                  </div>
